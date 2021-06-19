@@ -1,0 +1,21 @@
+.cmn-section {
+    &.-black {
+        background-color: cl(bkack);
+    }
+}
+
+.cmn-title {
+    text-align: center;
+    .main {
+        display: block;
+        color: cl(white);
+        font-size: 32px;
+    }
+}
+
+.sub {
+    display: block;
+    color: cl(white);
+    font-size: 20px;
+    @include TimesNewRoman;
+}

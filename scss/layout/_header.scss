@@ -1,0 +1,35 @@
+.header {
+    background-color: cl(primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+    .header-fixed {}
+    .header-logo {
+        width: 150px;
+        margin-left: 30px;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .nav {}
+    .nav-list {
+        display: flex;
+        margin-right: 40px;
+        .item {
+            +.item {
+                margin-left: 20px;
+            }
+        }
+        >a {
+            color: cl(white);
+            font-size: 18px;
+        }
+    }
+}

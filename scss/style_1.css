@@ -1,0 +1,113 @@
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Hiragino Mincho Pro', serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: #4D0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.header .header-logo {
+  width: 150px;
+  margin-left: 30px;
+}
+
+.header .nav-btn {
+  display: none;
+}
+
+.header .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+
+.header .nav-list .item + .item {
+  margin-left: 20px;
+}
+
+.header .nav-list > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.top {
+  background-image: url(../image/top-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 674px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.top .top-title {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.cmn-title {
+  text-align: center;
+}
+
+.cmn-title .main {
+  display: block;
+  color: #fff;
+  font-size: 32px;
+}
+
+.sub {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+/*# sourceMappingURL=style_1.css.map */
